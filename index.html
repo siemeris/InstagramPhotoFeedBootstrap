@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d980d77484.js" crossorigin="anonymous"></script>
+    <!-- links tipo fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- Fin links tipo fuente-->
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container-fluid"> 
+          <!-- navBar-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="fa-brands fa fa-instagram"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Instagram</a>
+                  </li>
+                </ul>
+                
+                <form class="d-flex" role="search">
+                    
+                    <!-- Default dropstart button -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create a new post</button>
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                        <!-- Dropdown menu links -->
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </form>
+
+              </div>
+            </div>
+          </nav>
+          <!-- cambiar de pantalla -->
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-border-all"></i></button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa fa-square"></i></button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <!-- Primera pantalla -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                  <div class="col-4 py-1 mx-auto">
+                    <img src="https://picsum.photos/400/200" class= "img-responsive center-block">
+                  </div>
+                </div>
+            </div>
+            </div>
+            <!-- Segunda pantalla-->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              
+              <div class="container-fluid bg-light">
+                <!--Primera Carta-->
+                <div class="card mt-3 mb-3 mx-auto" style="width: 30rem;">
+                  <!-- <h5 class="card-header bg-white">My First Photo</h5> -->
+                  <div class="container">
+                  <div class="row mt-2">
+                    <div class="col-10">
+                      <h5>My First Photo</h5>
+                    </div>
+                    <div class="col-2 text-end text-secondary">
+                      12/14
+                    </div>
+                  </div>
+                </div>
+                  <img src="https://picsum.photos/500/400" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">23 Likes</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="row"> 
+                      <div class="col-1">
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-heart"></i></small></p>
+                      </div>
+                      <div class="col-9">
+                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                      </div>
+                      <div class="col-2 text-end text-secondary">
+                        <p class="card-text"><small class="text-muted"><i class="fa-solid fa fa-ellipsis-vertical"></i></small></p>
+                      </div>
+                    </div>
+                    <!-- <p class="card-text"><small class="text-muted"><i class="fa-regular fa fa-heart"></i> Comment...<i class="fa-regular fa fa-heart"></i></small></p> -->
+                  </div>
+                </div>
+                <!-- segunda carta-->
+                <div class="card mt-3 mb-3 mx-auto" style="width: 30rem;">
+                  <!-- <h5 class="card-header bg-white">My First Photo</h5> -->
+                  <div class="container">
+                  <div class="row mt-2">
+                    <div class="col-10">
+                      <h5>My First Photo</h5>
+                    </div>
+                    <div class="col-2 text-end text-secondary">
+                      12/14
+                    </div>
+                  </div>
+                </div>
+                  <img src="https://picsum.photos/500/400" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">23 Likes</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="row"> 
+                      <div class="col-1">
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-heart"></i></small></p>
+                      </div>
+                      <div class="col-9">
+                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                      </div>
+                      <div class="col-2 text-end text-secondary">
+                        <p class="card-text"><small class="text-muted"><i class="fa-solid fa fa-ellipsis-vertical"></i></small></p>
+                      </div>
+                    </div>
+                    <!-- <p class="card-text"><small class="text-muted"><i class="fa-regular fa fa-heart"></i> Comment...<i class="fa-regular fa fa-heart"></i></small></p> -->
+                  </div>
+                </div>
+                <!--Tercera Carta-->
+                <div class="card mt-3 mb-3 mx-auto" style="width: 30rem;">
+                  <!-- <h5 class="card-header bg-white">My First Photo</h5> -->
+                  <div class="container">
+                  <div class="row mt-2">
+                    <div class="col-10">
+                      <h5>My First Photo</h5>
+                    </div>
+                    <div class="col-2 text-end text-secondary">
+                      12/14
+                    </div>
+                  </div>
+                </div>
+                  <img src="https://picsum.photos/500/400" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">23 Likes</p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <div class="row"> 
+                      <div class="col-1">
+                        <p class="card-text"><small class="text-muted"><i class="fa fa-heart"></i></small></p>
+                      </div>
+                      <div class="col-9">
+                        <p class="card-text"><small class="text-muted">Comment...</small></p>
+                      </div>
+                      <div class="col-2 text-end text-secondary">
+                        <p class="card-text"><small class="text-muted"><i class="fa-solid fa fa-ellipsis-vertical"></i></small></p>
+                      </div>
+                    </div>
+                    <!-- <p class="card-text"><small class="text-muted"><i class="fa-regular fa fa-heart"></i> Comment...<i class="fa-regular fa fa-heart"></i></small></p> -->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        -->
+        <div class="modal-body">
+          <!-- la caja de texto-->
+          <div class="input-group mb-3">
+            <!-- <span class="input-group-text">With textarea</span> -->
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        <p>
+          <button type="button" class="btn btn-outline-secondary border border-secondary"><i class="fa-solid fa fa-camera-retro"></i></button>
+          <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa fa-location-dot"></i></button>
+        </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  
+</body>
+</html>

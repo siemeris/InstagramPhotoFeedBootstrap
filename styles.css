@@ -1,0 +1,12 @@
+.navbar-nav .nav-link.active{
+    font-family: 'Courgette', cursive !important;
+    font-size: 25px !important;
+}
+.nav-link{
+    color:black;
+}
+
+.nav {
+    --bs-nav-link-color: darkgrey !important;
+    --bs-nav-link-hover-color: darkgrey !important;
+}
